@@ -1,0 +1,6 @@
+@Project7Candy_HostAddress = http://localhost:5173
+
+GET {{Project7Candy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
