@@ -125,5 +125,57 @@ namespace Project7Candy.Controllers
             });
             return Ok(DiscountProducts);
         }
+        [HttpPost]
+        public IActionResult AddProduct([FromBody] Product product)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            _db.Products.Add(product);
+            _db.SaveChanges();
+            return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateProduct(int id, [FromBody] Product updatedProduct)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var product = _db.Products.Find(id);
+            if (product == null) return NotFound();
+
+            product.ProductName = updatedProduct.ProductName;
+            product.Price = updatedProduct.Price;
+            product.ProductImage = updatedProduct.ProductImage;
+            product.ProductDescription = updatedProduct.ProductDescription;
+
+            _db.SaveChanges();
+            return Ok(product);
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteProduct(int id)
+        {
+            if (id < 1)
+            {
+                return BadRequest("ID must be greater than 0");
+            }
+
+            var product = _db.Products.FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            _db.Products.Remove(product);
+            _db.SaveChanges();
+            return Ok();
+        }
+
     }
 }

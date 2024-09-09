@@ -41,7 +41,14 @@ public partial class User
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
+    public virtual ICollection<UserAction> UserActions { get; set; } = new List<UserAction>();
+
     public virtual ICollection<UserAddress> UserAddresses { get; set; } = new List<UserAddress>();
+
+
+    public virtual ICollection<UserCheckIn> UserCheckIns { get; set; } = new List<UserCheckIn>();
+
+    public virtual ICollection<UserPoint> UserPoints { get; set; } = new List<UserPoint>();
 
     public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
 

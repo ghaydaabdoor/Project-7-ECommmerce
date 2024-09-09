@@ -17,6 +17,23 @@
     />
     <meta name="author" content="spacingtech_webify" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Discover the Products of Sugarland!" />
+    <meta
+      property="og:description"
+      content="Explore a wide range of delicious products from Sugarland. Don't miss out on our latest offerings!"
+    />
+    <meta
+      property="og:url"
+      content="https://dotnettutorials.net/lesson/object-oriented-programming-csharp/"
+    />
+    <!-- Add an image for better preview on Facebook -->
+    <meta
+      property="og:image"
+      content="https://example.com/path/to/your/image.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sugarland" />
+    <meta property="fb:app_id" content="1067101484810460" />
     <!-- title -->
     <title>
       Change-password - The Bakery & Chocolate eCommerce HTML5 Template
@@ -1284,8 +1301,13 @@
                         </a>
                       </li>
                       <li class="profile-li">
-                        <a href="index.html" class="active">
+                        <a href="Vouchers.html" class="active">
                           <span>Vouchers</span>
+                        </a>
+                      </li>
+                      <li class="profile-li">
+                        <a href="CheckIn.html" >
+                          <span>Daily Check-In</span>
                         </a>
                       </li>
                       <li class="profile-li">
@@ -1394,487 +1416,7 @@
           </div>
         </div>
       </div>
-      <div class="deal-section section-ptb">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <ul class="grid-wrap">
-                <li class="grid-wrapper title-wrapper">
-                  <div class="section-title">
-                    <span class="sub-title">Deal of the day</span>
-                    <div class="product-timer">
-                      <ul class="timer-section">
-                        <li class="timer-count">
-                          <span class="timer-text" id="day1">0</span>
-                          <span class="small-text">Day</span>
-                        </li>
-                        <li class="timer-count">
-                          <span class="timer-text" id="hrs1">0</span>
-                          <span class="small-text">Hrs</span>
-                        </li>
-                        <li class="timer-count">
-                          <span class="timer-text" id="min1">0</span>
-                          <span class="small-text">Min</span>
-                        </li>
-                        <li class="timer-count">
-                          <span class="timer-text" id="sec1">0</span>
-                          <span class="small-text">Sec</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="grid-wrapper slider-wrapper">
-                  <div class="deal-slider swiper" id="deal-product">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-21.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-21"
-                                />
-                                <img
-                                  src="img/product/p-22.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-22"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Crackers for rasmalai</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€61,00</span>
-                                <span class="old-price">€69,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-23.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-23"
-                                />
-                                <img
-                                  src="img/product/p-24.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-24"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Fresh healthy doughnuts</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€69,00</span>
-                                <span class="old-price">€89,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-1.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-1"
-                                />
-                                <img
-                                  src="img/product/p-2.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-2"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Candy nut chocolate</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€11,00</span>
-                                <span class="old-price">€19,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-3.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-3"
-                                />
-                                <img
-                                  src="img/product/p-4.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-4"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >A bekery doughnuts</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€21,00</span>
-                                <span class="old-price">€25,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-5.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-5"
-                                />
-                                <img
-                                  src="img/product/p-6.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-6"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Fresh bread toast</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€25,00</span>
-                                <span class="old-price">€45,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-7.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-7"
-                                />
-                                <img
-                                  src="img/product/p-8.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-8"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Free sugar toast</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€25,00</span>
-                                <span class="old-price">€45,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-9.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-9"
-                                />
-                                <img
-                                  src="img/product/p-10.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-10"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >The bread a fresh</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€25,00</span>
-                                <span class="old-price">€35,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-11.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-11"
-                                />
-                                <img
-                                  src="img/product/p-12.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-12"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Jamun fruit pastry</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€25,00</span>
-                                <span class="old-price">€35,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-13.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-13"
-                                />
-                                <img
-                                  src="img/product/p-14.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-14"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Sandwich olka bread</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€31,00</span>
-                                <span class="old-price">€39,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-15.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-15"
-                                />
-                                <img
-                                  src="img/product/p-16.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-16"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Healthy cake pastry</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€44,00</span>
-                                <span class="old-price">€49,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="product-grid-list">
-                          <div class="single-product-wrap">
-                            <div class="product-image">
-                              <a href="product-template.html" class="pro-img">
-                                <img
-                                  src="img/product/p-17.jpg"
-                                  class="img-fluid img1 resp-img1"
-                                  alt="p-17"
-                                />
-                                <img
-                                  src="img/product/p-18.jpg"
-                                  class="img-fluid img2 resp-img2"
-                                  alt="p-18"
-                                />
-                              </a>
-                            </div>
-                            <div class="product-content">
-                              <div class="product-rating">
-                                <span class="star-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                </span>
-                              </div>
-                              <h6>
-                                <a href="product-template.html"
-                                  >Crackers for rasmalai</a
-                                >
-                              </h6>
-                              <div class="price-box">
-                                <span class="new-price">€61,00</span>
-                                <span class="old-price">€69,00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="footer-bottom-area">
         <div class="container">
           <div class="row">
@@ -3482,6 +3024,7 @@
     <script src="js/counter.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+
     <script>
       const userId = localStorage.getItem("UserID");
 
@@ -3510,7 +3053,8 @@
 
       ////////////////////////////////////////////////////////////////////////
       async function showVouchers() {
-        let URL = `https://localhost:44325/api/Profile/Vouchers?id=${userId}`;
+        
+        let URL = `https://localhost:44325/api/Profile/GetUserVouchers?id=${userId}`;
         let response = await fetch(URL);
         let data = await response.json();
         console.log(data); // Log the data to see the structure
@@ -3544,7 +3088,7 @@
                 <td style="padding: 8px; border-bottom: 1px solid #ddd;">${
                   voucher.voucherCode || "N/A"
                 }</td>
-               
+       
                 <td style="padding: 8px; border-bottom: 1px solid #ddd;">${
                   voucher.discountValue || "N/A"
                 }%</td>
@@ -3563,7 +3107,7 @@
                 }$</td>
                 <td style="padding: 8px; border-bottom: 1px solid #ddd;">${
                   voucher.maxTotalUsage || "N/A"
-                }$</td>
+                }</td>
                 <td style="padding: 8px; border-bottom: 1px solid #ddd;">${isActiveText}</td>
             </tr>
         `;
@@ -3577,9 +3121,158 @@
 
         // Insert the table into the container
         container.innerHTML = tableHTML;
+        // Now append the three <h4> with <p> underneath the table
+        container.innerHTML += `
+      <div style="margin-top: 30px; text-align: left;">
+        <h4 style="color: #c19d60;">How can I earn Vouchers?</h4><br>
+<p style="color:black; font-size: 16px;"><b>
+  1. Share on Facebook. </b><br>
+ Share on Facebook and receive a 10% discount coupon added directly to your vouchers. The coupon will be like this: SHARE86983, valid for just 24 hours! Don’t miss out on enjoying our products at a discount. <br>
+  <a onclick="shareOnFacebook()" style="
+    background-color: #c19d60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  ">
+    <b>Share!</b>
+  </a>
+</p><br>
+  <p style="color:black; font-size: 16px;"><b>
+  2. Add Comments on Products </b><br>
+ Leave a comment on any product and get rewarded! Each comment you share will earn you a voucher like this: COMMENT56432, giving you a 15% discount on your next purchase. The voucher is valid for 24 hours, so don’t wait! <br>
+  <a onclick="Comment()" style="
+    background-color: #c19d60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  " href="collection.html">
+    <b>Add Comments!</b>
+  </a>
+</p>  <br>    
+       <p style="color:black; font-size: 16px;"><b>
+  3. Cash Back </b><br>
+ Earn Cash Back on every purchase! Get a 5% cash back voucher after completing your order, like this: CASHBACK45678. The voucher can be used on your next purchase and is valid for 24 hours, so don’t miss out! <br>
+  <a onclick="Comment()" style="
+    background-color: #c19d60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  " href="collection.html">
+    <b>Order Now!</b>
+  </a>
+</p>  <br>    
+      </div>
+    `;
       }
 
       showVouchers();
+    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+
+    <script>
+      localStorage.setItem("UserID", 1);
+
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "1067101484810460", // Replace with your actual Facebook App ID
+          cookie: true,
+          xfbml: true,
+          version: "v15.0", // Replace with the latest Facebook API version
+        });
+      };
+
+      function shareOnFacebook() {
+        FB.ui(
+          {
+            method: "share",
+            href: "https://dotnettutorials.net/lesson/object-oriented-programming-csharp/",
+          },
+          function (response) {}
+        );
+
+        awardPoints();
+      }
+
+      function awardPoints() {
+        var userID = localStorage.getItem("UserID");
+        if (userID) {
+          fetch("https://localhost:44325/api/LoyaltyPoints/award", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              // 'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value, // Add CSRF token if needed
+            },
+            body: JSON.stringify({
+              userId: parseInt(userID),
+              action: "share",
+              points: 15, // Assuming fixed points for sharing
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                console.log("Points awarded:", data.totalPoints);
+              } else {
+                console.error("Failed to award points:", data.message);
+              }
+            })
+            .catch((error) => console.error("Error:", error));
+        } else {
+          console.error("User ID not found in local storage.");
+        }
+      }
+    </script>
+    <script>
+      async function convertOrdersToVoucher(userId) {
+        var userID = localStorage.getItem("UserID");
+
+        const response = await fetch(
+          `https://localhost:44325/api/LoyaltyPoints/ConvertOrdersToVoucher?id=${userID}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ id: userId }),
+          }
+        );
+      }
+
+      convertOrdersToVoucher(userID);
+
+      async function convertCommentsToVoucher(userId) {
+        const response = await fetch(
+          `https://localhost:44325/api/LoyaltyPoints/ConvertCommentsToVoucher?id=${userId}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+      }
+
+      convertCommentsToVoucher(userID);
     </script>
   </body>
 

@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 06 Sep 2024 12:56:54 at https://html.phoenixcoded.net/light-able/bootstrap/application/ecom_product.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.phoenixcoded.net/light-able/bootstrap/application/ecom_product.html -O1 "C:\Users\Orange\Downloads\master\admin" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:58:06	Warning: 	File not parsed, looks like binary: https://html.phoenixcoded.net/light-able/bootstrap/assets/fonts/tabler/tabler-icons.woff2
+12:58:08	Warning: 	File not parsed, looks like binary: https://html.phoenixcoded.net/light-able/bootstrap/assets/fonts/fontawesome/fa-regular-400.woff2
+12:58:08	Warning: 	File not parsed, looks like binary: https://html.phoenixcoded.net/light-able/bootstrap/assets/fonts/fontawesome/fa-solid-900.woff2
+12:58:09	Warning: 	File not parsed, looks like binary: https://html.phoenixcoded.net/light-able/bootstrap/assets/fonts/fontawesome/fa-brands-400.woff2
+12:58:09	Warning: 	File not parsed, looks like binary: https://html.phoenixcoded.net/light-able/bootstrap/assets/fonts/material/material.woff2
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 15 seconds : 180 links scanned, 179 files written (24237244 bytes overall) [17424938 bytes received at 232332 bytes/sec], 8122857 bytes transferred using HTTP compression in 48 files, ratio 15%, 20.0 requests per connection
+(No errors, 5 warnings, 0 messages)

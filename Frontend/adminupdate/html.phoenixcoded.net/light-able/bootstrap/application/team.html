@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 70px; /* Adjust based on your navbar height */
+        }
+        .user-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Admin Dashboard</a>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Users and Orders</h2>
+        <!-- Users Container -->
+        <div class="row" id="usersContainer">
+            <!-- Users will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Orders Modal -->
+    <div class="modal fade" id="ordersModal" tabindex="-1" role="dialog" aria-labelledby="ordersModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ordersModalLabel">User Orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Orders Section -->
+                    <div id="ordersSection">
+                        <!-- Orders will be populated here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadUsers();
+        });
+
+        async function loadUsers() {
+            try {
+                const response = await fetch('https://localhost:44350/api/User/getAllUsers');
+                const users = await response.json();
+                const container = document.getElementById('usersContainer');
+                container.innerHTML = '';
+
+                users.forEach(user => {
+                    const userCard = `
+                        <div class="col-md-4 user-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">${user.userName}</h5>
+                                    <p class="card-text">Email: ${user.email}</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#ordersModal" data-user-id="${user.userId}" onclick="loadOrders(${user.userId})">View Orders</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += userCard;
+                });
+            } catch (error) {
+                console.error('Error loading users:', error);
+            }
+        }
+
+        async function loadOrders(userId) {
+            try {
+                const response = await fetch(`https://localhost:44350/api/Order/getOrdersByUser/${userId}`);
+                const orders = await response.json();
+                const ordersSection = document.getElementById('ordersSection');
+                ordersSection.innerHTML = '';
+
+                orders.forEach(order => {
+                    const orderCard = `
+                        <div class="mb-3">
+                            <h6>Order ID: ${order.orderId}</h6>
+                            <p>Date: ${new Date(order.orderDate).toLocaleDateString()}</p>
+                            <p>Total: $${order.totalAmount.toFixed(2)}</p>
+                            <p>Status: ${order.orderStatus}</p>
+                        </div>
+                    `;
+                    ordersSection.innerHTML += orderCard;
+                });
+            } catch (error) {
+                console.error('Error loading orders:', error);
+            }
+        }
+    </script>
+</body>
+</html>

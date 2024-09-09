@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Project7Candy.DTO;
 using Project7Candy.Models;
 using Project7Candy.Services;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Project7Candy.Controllers
 {
@@ -94,15 +96,59 @@ namespace Project7Candy.Controllers
 
             };
 
-
-            // Add user to the database
             _db.Users.Add(user);
             _db.SaveChanges();
 
             return Ok(user);
         }
+        [HttpGet("Orders")]
+        public IActionResult GetAllUsers()
+        {
+            var users = _db.Users.ToList();
+            return Ok(users);
+        }
 
 
+        [HttpGet("getOuserById")]
+        public IActionResult GetOrderById([FromQuery] int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest("ID must be greater than 0.");
+            }
+
+            var user = _db.Users.Where(c => c.UserId == id).FirstOrDefault();
+            if (user == null)
+            {
+                return NotFound("user not found.");
+            }
+
+            return Ok(user);
+        }
+
+
+
+
+        [HttpGet("GetUsersWithOrders")]
+        public IActionResult GetUsersWithOrders()
+        {
+            var users = _db.Users
+                .Select(user => new UserWithOrdersDTO
+                {
+                    UserId = user.UserId,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Orders = user.Orders.Select(order => new OrderDTO
+                    {
+                        TotalAmount = order.TotalAmount,
+                        PaymentMethod = order.PaymentMethod,
+                        OrderStatus = order.OrderStatus
+                    }).ToList()
+                })
+                .ToList();
+
+            return Ok(users);
+        }
     }
     public class GoogleUserDto
     {
@@ -111,6 +157,10 @@ namespace Project7Candy.Controllers
         public string email { get; set; }
 
     }
+
+
+
+
 
 }
 

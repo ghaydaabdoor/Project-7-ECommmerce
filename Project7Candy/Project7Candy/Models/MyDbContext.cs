@@ -35,7 +35,14 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    public virtual DbSet<UserAction> UserActions { get; set; }
+
     public virtual DbSet<UserAddress> UserAddresses { get; set; }
+
+    public virtual DbSet<UserCheckIn> UserCheckIns { get; set; }
+
+
+    public virtual DbSet<UserPoint> UserPoints { get; set; }
 
     public virtual DbSet<UserRole> UserRoles { get; set; }
 
@@ -221,6 +228,19 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.UserType).HasMaxLength(50);
         });
 
+        modelBuilder.Entity<UserAction>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__UserActi__3214EC07034CC011");
+
+            entity.Property(e => e.Action)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserActions)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserActio__UserI__6C190EBB");
+        });
+
         modelBuilder.Entity<UserAddress>(entity =>
         {
             entity.HasKey(e => e.AddressId).HasName("PK__UserAddr__091C2A1B1D51698D");
@@ -235,6 +255,34 @@ public partial class MyDbContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_UserAddresses_Users");
+        });
+
+        modelBuilder.Entity<UserCheckIn>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__UserChec__3214EC07F7CD858E");
+
+            entity.ToTable("UserCheckIn");
+
+            entity.Property(e => e.LastCheckInDate).HasColumnType("datetime");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserCheckIns)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserCheck__UserI__74AE54BC");
+        });
+
+       
+
+        modelBuilder.Entity<UserPoint>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__UserPoin__3214EC076CD0AF10");
+
+            entity.Property(e => e.Action)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserPoints)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserPoint__UserI__71D1E811");
         });
 
         modelBuilder.Entity<UserRole>(entity =>
