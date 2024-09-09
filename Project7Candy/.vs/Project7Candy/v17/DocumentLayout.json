@@ -3,8 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\uservoucherusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\uservoucherusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\voucherdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\voucherdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\services\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\services\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\changepasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\changepasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,36 +87,12 @@
       "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\voucherdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\voucherdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\changepasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\changepasswordrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\addressrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\dto\\addressrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\dto\\feedbackrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|c:\\users\\orange\\desktop\\candy project\\project7candy\\project7candy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D304F0-C05E-4A0A-B0A0-F0F3C107C4C8}|Project7Candy\\Project7Candy.csproj|solutionrelative:project7candy\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +110,258 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserVoucherUsage.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\UserVoucherUsage.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Models\\UserVoucherUsage.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\UserVoucherUsage.cs",
+              "RelativeToolTip": "Project7Candy\\Models\\UserVoucherUsage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T03:44:35.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Voucher.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\Voucher.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Models\\Voucher.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\Voucher.cs",
+              "RelativeToolTip": "Project7Candy\\Models\\Voucher.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T03:44:31.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T18:03:28.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\FeedbackController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T16:13:07.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:30:12.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAQwLkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:12:43.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T08:45:13.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAswD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T14:29:21.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Project7Candy\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAUwGMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:20:38.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VoucherDetailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\VoucherDetailDTO.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\DTO\\VoucherDetailDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\VoucherDetailDTO.cs",
+              "RelativeToolTip": "Project7Candy\\DTO\\VoucherDetailDTO.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:21:37.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "Project7Candy\\DTO\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:17:21.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\appsettings.json",
+              "RelativeDocumentMoniker": "Project7Candy\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\appsettings.json",
+              "RelativeToolTip": "Project7Candy\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-08T13:10:55.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\User.cs",
+              "RelativeToolTip": "Project7Candy\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:28:55.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Services\\TokenGenerator.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Services\\TokenGenerator.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Services\\TokenGenerator.cs",
+              "RelativeToolTip": "Project7Candy\\Services\\TokenGenerator.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:14:34.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Services\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Services\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Services\\PasswordHasher.cs",
+              "RelativeToolTip": "Project7Candy\\Services\\PasswordHasher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:05:20.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Program.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Program.cs",
+              "RelativeToolTip": "Project7Candy\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAgwF8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T13:11:21.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangePasswordRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
+              "RelativeToolTip": "Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T06:22:20.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Project7Candy\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T05:53:39.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "loginUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\loginUserDTO.cs",
+              "RelativeDocumentMoniker": "Project7Candy\\DTO\\loginUserDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\loginUserDTO.cs",
+              "RelativeToolTip": "Project7Candy\\DTO\\loginUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:17:46.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "Project7Candy\\Models\\Cart.cs",
@@ -83,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "Project7Candy\\Models\\CartItem.cs",
@@ -96,46 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CartController.cs*",
-              "RelativeToolTip": "Project7Candy\\Controllers\\CartController.cs*",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T08:45:13.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\DTO\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\PasswordHasher.cs",
-              "RelativeToolTip": "Project7Candy\\DTO\\PasswordHasher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T06:25:38.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VoucherDetailDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\VoucherDetailDTO.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\DTO\\VoucherDetailDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\VoucherDetailDTO.cs",
-              "RelativeToolTip": "Project7Candy\\DTO\\VoucherDetailDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T06:21:37.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "UserRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\UserRequestDTO.cs",
               "RelativeDocumentMoniker": "Project7Candy\\DTO\\UserRequestDTO.cs",
@@ -148,46 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "Project7Candy\\Controllers\\ProfileController.cs",
-              "ViewState": "AQIAAKcBAAAAAAAAAAAmwMgBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T06:12:43.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FeedbackController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\FeedbackController.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\FeedbackController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\FeedbackController.cs",
-              "RelativeToolTip": "Project7Candy\\Controllers\\FeedbackController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:13:07.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChangePasswordRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
-              "RelativeToolTip": "Project7Candy\\DTO\\ChangePasswordRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T06:22:20.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "AddressRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\AddressRequestDTO.cs",
               "RelativeDocumentMoniker": "Project7Candy\\DTO\\AddressRequestDTO.cs",
@@ -200,20 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Project7Candy\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T18:03:28.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "Feedback.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\Feedback.cs",
               "RelativeDocumentMoniker": "Project7Candy\\Models\\Feedback.cs",
@@ -226,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "FeedbackRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\DTO\\FeedbackRequestDTO.cs",
               "RelativeDocumentMoniker": "Project7Candy\\DTO\\FeedbackRequestDTO.cs",
@@ -235,19 +435,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T16:17:21.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "Project7Candy\\Models\\MyDbContext.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\Candy project\\Project7Candy\\Project7Candy\\Models\\MyDbContext.cs",
-              "RelativeToolTip": "Project7Candy\\Models\\MyDbContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA5wA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T05:53:39.947Z",
               "EditorCaption": ""
             }
           ]

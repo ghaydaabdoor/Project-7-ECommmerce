@@ -29,6 +29,10 @@ public partial class User
 
     public string? Uid { get; set; }
 
+    public string? ResetToken { get; set; }
+
+    public DateTime? TokenExpiration { get; set; }
+
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();

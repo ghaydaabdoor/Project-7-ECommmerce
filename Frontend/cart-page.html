@@ -40,6 +40,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- account css -->
     <link rel="stylesheet" type="text/css" href="css/account.css">
+    <style>
+        #grandtotal {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -910,8 +915,7 @@
                                         <div class="cart-title">
                                             <h6>My cart:</h6>
                                             <span class="cart-count">
-                                                <span class="cart-counter">3</span>
-                                                <span class="cart-item-title">Item</span>
+                                                <span id="itemsCount" class="cart-counter"></span>
                                             </span>
                                         </div>
                                         <div class="item-wrap" id="CartItemsContainer">
@@ -922,64 +926,21 @@
                                             <a href="cart-empty.html" class="btn-style2">Clear cart</a>
                                         </div>
                                     </div>
-                                    <div class="special-notes">
-                                        <label>Special instructions for seller</label>
-                                        <textarea rows="10" name="note"></textarea>
-                                    </div>
                                 </div>
                                 <div class="cart-info-wrap">
-                                    <div class="cart-calculator cart-info">
-                                        <h6>Shipping info</h6>
-                                        <div class="culculate-shipping" id="shipping-calculator">
-                                            <ul>
-                                                <li class="field">
-                                                    <label>Country</label>
-                                                    <select>
-                                                        <option>India</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Austria </option>
-                                                        <option>Belgium</option>
-                                                        <option>Bhutan</option>
-                                                        <option>Canada</option>
-                                                        <option>France</option>
-                                                        <option>Germany</option>
-                                                        <option>Maldives</option>
-                                                        <option>Nepal</option>
-                                                    </select>
-                                                </li>
-                                                <li class="field">
-                                                    <label>State</label>
-                                                    <select>
-                                                        <option>Gujarat</option>
-                                                        <option>Andaman and Nicobar Islands</option>
-                                                        <option>Andhra Pradesh</option>
-                                                        <option>Bihar</option>
-                                                        <option>Chandigarh</option>
-                                                        <option>Delhi</option>
-                                                        <option>Haryana</option>
-                                                        <option>Jammu and Kashmir</option>
-                                                        <option>Karnataka</option>
-                                                        <option>Ladakh</option>
-                                                    </select>
-                                                </li>
-                                                <li class="field cpn-code">
-                                                    <label>Postal/Zip Codes</label>
-                                                    <input type="text" name="q" placeholder="Zip/Postal Code">
-                                                </li>
-                                            </ul>
-                                            <div class="shipping-info">
-                                                <a href="javascript:void(0)" class="get-rates">Calculate</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="cart-total-wrap cart-info">
                                         <div class="cart-total">
                                             <div class="total-amount">
-                                                <h6 class="total-title">Total</h6>
-                                                <span class="amount total-price">€56.00</span>
+                                                <h6 class="total-title">Subtotal</h6>
+                                                <span id="subtotal" class="amount total-price"></span>
                                             </div>
                                             <div class="proceed-to-discount">
-                                                <input type="text" name="discount" placeholder="Discount code">
+                                                <input type="text" name="discount" placeholder="Discount code"
+                                                    id="discountCode" onblur="checkVoucher()">
+                                            </div>
+                                            <div id="grandtotal" class="total-amount">
+                                                <h6 class="total-title">Grand Total</h6>
+                                                <span class="amount total-price">€56.00</span>
                                             </div>
                                             <div class="proceed-to-checkout">
                                                 <a href="checkout-style1.html">Checkout</a>
@@ -2783,14 +2744,13 @@
     <script>
         localStorage.UserID = 1;
         var currentUserID = localStorage.UserID;
-    
+
         async function GetCartItems() {
             var url = `https://localhost:44325/api/Cart/GetCartItems/${currentUserID}`;
             var response = await fetch(url);
             var data = await response.json();
             var CartItemsContainer = document.getElementById("CartItemsContainer");
             console.log(data);
-    
             data.forEach((element, index) => {
                 CartItemsContainer.innerHTML += `
                 <ul class="cart-wrap">
@@ -2845,10 +2805,17 @@
                     <!-- cart-price end -->
                 </ul>`;
             });
+            var subtotal = document.getElementById("subtotal");
+            document.getElementById("itemsCount").innerText = data.length + ' items'
+            var sum = 0;
+            for (i = 0; i < data.length; i++) {
+                sum += data[i].quantity * data[i].product.price;
+            }
+            subtotal.innerText = sum.toFixed(2) + ' JOD';
         }
-    
+
         GetCartItems();
-    
+
         // Increment quantity
         function plus(event, index) {
             event.preventDefault();
@@ -2857,7 +2824,7 @@
             quantityInput.value = currentQuantity + 1;
             updatePrice(index, currentQuantity + 1);
         }
-    
+
         // Decrement quantity
         function minus(event, index) {
             event.preventDefault();
@@ -2868,17 +2835,45 @@
                 updatePrice(index, currentQuantity - 1);
             }
         }
-    
+
         // Update price based on new quantity
         function updatePrice(index, newQuantity) {
             var fullPriceElement = document.getElementById(`full-price-${index}`);
             var pricePerItem = parseFloat(fullPriceElement.dataset.price); // Get price from the data attribute
             fullPriceElement.innerText = (newQuantity * pricePerItem).toFixed(2) + ' JOD';
         }
+
+        async function checkVoucher() {
+            var discountCode = document.getElementById("discountCode").value;
+            var url = "https://localhost:44325/api/Profile/GetAllVouchers";
+            var response = await fetch(url);
+            var data = await response.json();
+            console.log(data);
+
+            var currentDate = new Date();
+            var voucherExists = data.some(element => {
+                var validFrom = new Date(element.validFrom);
+                var validTo = new Date(element.validTo);
+                return element.voucherCode == discountCode && currentDate >= validFrom && currentDate <= validTo;
+            });
+
+            if (voucherExists) {
+                console.log("Discount code is valid.");
+                return true;
+            } else {
+                console.log("Discount code is not valid.");
+                return false;
+            }
+        }
+
+
+
+
+
     </script>
-    
-    
-    
+
+
+
 </body>
 
 <!-- Mirrored from spacingtech.com/html/banno/banno-ltr/cart-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 18:48:32 GMT -->

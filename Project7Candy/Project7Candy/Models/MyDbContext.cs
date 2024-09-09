@@ -215,6 +215,8 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.Password).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(15);
             entity.Property(e => e.Points).HasDefaultValue(0);
+            entity.Property(e => e.ResetToken).HasMaxLength(100);
+            entity.Property(e => e.TokenExpiration).HasColumnType("datetime");
             entity.Property(e => e.Uid).HasMaxLength(100);
             entity.Property(e => e.UserType).HasMaxLength(50);
         });

@@ -156,7 +156,7 @@ namespace Project7Candy.Controllers
 
         ///////////////////////////////////////////////////////////////
 
-        [HttpGet("Vouchers")]
+        [HttpGet("GetUserVouchers")]
         public IActionResult GetVouchers(int id)
         {
             if (id <= 0) { return BadRequest("Invalid user ID."); }
@@ -189,7 +189,16 @@ namespace Project7Candy.Controllers
         }
 
 
-        ///////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////// 
+
+        [HttpGet("GetAllVouchers")]
+        public IActionResult GetAllVouchers()
+        {
+            var AllVouchers= _db.Vouchers.ToList();
+            return Ok(AllVouchers);
+        }
+
+
 
         [HttpGet("Orders")]
         public IActionResult GetOrders(int id)
