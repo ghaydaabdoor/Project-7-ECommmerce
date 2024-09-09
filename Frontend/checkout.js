@@ -1,8 +1,5 @@
-// Simulate local storage data (this would come from previous user actions)
-localStorage.setItem('userID', 1);
-
 // Retrieve the stored data
-let userId = localStorage.getItem('userID');
+let userId = localStorage.getItem('UserID');
 // let TotalAmount = localStorage.getItem('totalAmount');
 
 // Function to fetch user address data by UserId
@@ -133,23 +130,12 @@ document.getElementById("street").addEventListener("change", updateAddressDetail
 
 // Fetch and display user addresses in the dropdown on page load
 findUserAddressesByUserId();
-
-
-
-// function save(){
-
-//     let comments = document.getElementById("comments").value;
-//     localStorage.setItem("PaymentMethod","Paypal");
-//     localStorage.setItem("OrderStatus","Completed");
-//     localStorage.setItem("Comment",comments);
-
-// }    
+ 
 
 document.getElementById('placeOrderBtn').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default link behavior
 
     let comments = document.getElementById("comments").value;
-    // localStorage.setItem("PaymentMethod","Paypal");
     localStorage.setItem("OrderStatus","Completed");
     localStorage.setItem("Comment",comments);
 

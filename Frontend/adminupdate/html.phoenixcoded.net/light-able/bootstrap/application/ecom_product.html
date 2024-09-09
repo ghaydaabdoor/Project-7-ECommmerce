@@ -2385,13 +2385,14 @@
               const response = await fetch('https://localhost:44325/api/Categories/GetAllCategories');
               if (response.ok) {
                   const categories = await response.json();
+                  console.log(categories);
                   categoriesContainer.innerHTML = '';
 
                   categories.forEach(category => {
                       const card = `
                           <div class="col-md-4 mb-4">
                               <div class="card">
-                                  <img src="${category.categoryImage || 'https://via.placeholder.com/300x200'}" class="card-img-top" alt="${category.categoryName}">
+                                  <img src="${category.categoryImage}" class="card-img-top" alt="${category.categoryName}">
                                   <div class="card-body">
                                       <h5 class="card-title">${category.categoryName}</h5>
                                       <p class="card-text">${category.categoryDescription || 'No description available'}</p>

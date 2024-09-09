@@ -2742,11 +2742,10 @@
     <script src="js/main.js"></script>
 
     <script>
-        localStorage.UserID = 1;
         var currentUserID = localStorage.UserID;
 
         async function GetCartItems() {
-            var url = `https://localhost:44325/api/Cart/GetCartItems/${currentUserID}`;
+            var url = `https://localhost:44325/api/CartItem/GetCartItems/${currentUserID}`;
             var response = await fetch(url);
             var data = await response.json();
             var CartItemsContainer = document.getElementById("CartItemsContainer");
@@ -2823,6 +2822,7 @@
             var currentQuantity = parseInt(quantityInput.value);
             quantityInput.value = currentQuantity + 1;
             updatePrice(index, currentQuantity + 1);
+            updateSubtotal(); // Update the subtotal after increasing quantity
         }
 
         // Decrement quantity
@@ -2833,6 +2833,7 @@
             if (currentQuantity > 1) {
                 quantityInput.value = currentQuantity - 1;
                 updatePrice(index, currentQuantity - 1);
+                updateSubtotal(); // Update the subtotal after decreasing quantity
             }
         }
 
@@ -2843,38 +2844,79 @@
             fullPriceElement.innerText = (newQuantity * pricePerItem).toFixed(2) + ' JOD';
         }
 
-        async function checkVoucher() {
-            var discountCode = document.getElementById("discountCode").value;
-            var url = "https://localhost:44325/api/Profile/GetAllVouchers";
-            var response = await fetch(url);
-            var data = await response.json();
-            console.log(data);
-
-            var currentDate = new Date();
-            var voucherExists = data.some(element => {
-                var validFrom = new Date(element.validFrom);
-                var validTo = new Date(element.validTo);
-                return element.voucherCode == discountCode && currentDate >= validFrom && currentDate <= validTo;
+        function updateSubtotal() {
+            var subtotal = 0;
+            document.querySelectorAll('.full-price').forEach((element) => {
+                subtotal += parseFloat(element.innerText);
             });
-
-            if (voucherExists) {
-                console.log("Discount code is valid.");
-                return true;
-            } else {
-                console.log("Discount code is not valid.");
-                return false;
-            }
+            document.getElementById('subtotal').innerText = subtotal.toFixed(2) + ' JOD';
         }
+
+        async function checkVoucher() {
+    var discountCode = document.getElementById("discountCode").value;
+    var subtotalElement = document.getElementById("subtotal");
+    var subtotal = parseFloat(subtotalElement.innerText); // Get the current subtotal
+    var url = "https://localhost:44325/api/Profile/GetAllVouchers";
+    var response = await fetch(url);
+    var vouchers = await response.json();
+    console.log(vouchers);
+
+    var currentDate = new Date();
+    var validVoucher = vouchers.find(element => {
+        var validFrom = new Date(element.validFrom);
+        var validTo = new Date(element.validTo);
+        return element.voucherCode === discountCode && currentDate >= validFrom && currentDate <= validTo;
+    });
+
+    if (!validVoucher) {
+        console.log("Discount code is not valid.");
+        alert("Discount code is not valid or expired.");
+        return false;
+    }
+
+    // If the voucher is valid, check if the user has used this voucher
+    var userVouchersUrl = `https://localhost:44325/api/Profile/GetUserVouchers?id=${currentUserID}`;
+    var userResponse = await fetch(userVouchersUrl);
+    var userVouchers = await userResponse.json();
+    var userVoucherExists = userVouchers.some(element => element.voucherCode === discountCode);
+
+    if (!userVoucherExists) {
+        console.log("User has not used this voucher.");
+        var discountValue = validVoucher.discountValue; // Assuming discountValue is in percentage
+
+        var discountAmount = (discountValue / 100) * subtotal;
+        var grandTotal = subtotal - discountAmount;
+
+        document.getElementById("GrandTotal").innerText = grandTotal.toFixed(2) + ' JOD';
+
+        console.log("Discount applied successfully.");
+        alert(`Discount applied successfully! You saved ${discountAmount.toFixed(2)} JOD.`);
+
+        return true;
+    } else {
+        console.log("User has already used this voucher.");
+        alert("You have already used this voucher.");
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         let GrandTotal = document.getElementById("GrandTotal");
-        function sendGrandTotal(){
-            localStorage.TotalAmount= GrandTotal.textContent;
+        function sendGrandTotal() {
+            localStorage.TotalAmount = GrandTotal.textContent;
         }
-
-
-
-
-
 
     </script>
 

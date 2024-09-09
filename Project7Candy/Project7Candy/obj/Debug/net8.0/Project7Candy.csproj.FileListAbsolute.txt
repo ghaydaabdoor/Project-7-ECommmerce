@@ -1,3 +1,10 @@
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.csproj.AssemblyReference.cache
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.AssemblyInfoInputs.cache
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.AssemblyInfo.cs
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.csproj.CoreCompileInputs.cache
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\appsettings.json
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Project7Candy.exe
@@ -40,6 +47,8 @@ C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalCheckoutSdk.dll
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalHttp-Dotnet.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Serilog.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Serilog.AspNetCore.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
@@ -135,13 +144,6 @@ C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.csproj.AssemblyReference.cache
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.AssemblyInfoInputs.cache
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.AssemblyInfo.cs
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.csproj.CoreCompileInputs.cache
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\staticwebassets\msbuild.Project7Candy.Microsoft.AspNetCore.StaticWebAssets.props
@@ -156,5 +158,3 @@ C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.pdb
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.genruntimeconfig.cache
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\ref\Project7Candy.dll
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalCheckoutSdk.dll
-C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalHttp-Dotnet.dll

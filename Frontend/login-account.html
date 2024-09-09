@@ -964,7 +964,7 @@ function sendResetCode() {
 
 
                 async function login(params) {
-    debugger
+    
     const url ="https://localhost:44325/api/User/login";
     var form=document.getElementById("form");
     event.preventDefault();
@@ -978,21 +978,27 @@ function sendResetCode() {
     var result= await response.json();
 
   let token= localStorage.jwtToken=result.token;
-  localStorage.UserID=result.userId;
+ let user= localStorage.UserID=result.userId;
+ let usertype=localStorage.UserType=result.userType
    console.log("token",token)
-
+   console.log("UserID",user)
+   console.log("usertype",usertype)
+   if(result.userType=="Admin"){
+    window.alert("Admin logged in successfully ");
+    window.location.href ="./adminupdate/html.phoenixcoded.net/light-able/bootstrap/application/account-profile.html";
+    return; 
+}
 if(response.ok){
+    console.log("response",response)
     window.alert("User logged in successfully ");
-    window.location.href ='index.html';
+    window.location.href ='index-2.html';
     
 
 }
+
 else{
     window.alert("email or password wrong"); 
 }
-    
-
-
    
     
 }
@@ -1037,12 +1043,6 @@ else{
             const user = result.user;
             console.log("User:", user);
             
-            // localStorage.setItem('user', JSON.stringify({
-            // uid:user.uid,
-            //   displayName: user.displayName,
-            //   email: user.email,
-             
-            // }));
     
             let userData={
       uid: user.uid,
@@ -1088,6 +1088,15 @@ else{
     } else {
         console.error("Login button not found");
     }
+    
+    // async function getCartID() {
+    //     var url=`https://localhost:44325/api/CartItem/getCartbyUserIDDDD/${localStorage.UserID}`;
+    //     var response= await fetch (url);
+    //     var data= await response.json();
+    //     var cartID= data.cartId;
+    //     localStorage.CARTID=cartID;
+    // }
+
     
     
     </script>

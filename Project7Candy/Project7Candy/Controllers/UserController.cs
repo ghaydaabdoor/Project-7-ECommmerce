@@ -68,7 +68,7 @@ namespace Project7Candy.Controllers
             var roles = _db.UserRoles.Where(r => r.UserId == user.UserId).Select(r => r.Role).ToList();
             var token = _tokenGenerator.GenerateToken(user.FirstName + " " + user.LastName, roles);
             // Generate a token or return a success response
-            return Ok(new { Token = token, UserId = user.UserId });
+            return Ok(new { Token = token, UserId = user.UserId, UserType=user.UserType });
         }
 
 

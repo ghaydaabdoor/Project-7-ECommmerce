@@ -2249,8 +2249,6 @@
     window.onload = loadUserProfile;
     async function editProfile(event) {
       event.preventDefault();
-      localStorage.setItem("UserID", 1);
-
       let n = Number(localStorage.getItem("UserID"));
       let url = `https://localhost:44325/api/Profile/${n}`;
 

@@ -195,14 +195,8 @@
                                     </li>
                                     <li class="side-wrap user-wrap">
                                         <div class="acc-desk-header">
-                                            <div class="acc-title">
-                                                <a href="login-account.html" class="acc-ti">
-                                                    <span class="user-icon"><i class="feather-user"></i></span>
-                                                    <div class="icon-heading">
-                                                        <h6 class="sub-heading">My account</h6>
-                                                        <span>Login &amp; Register</span>
-                                                    </div>
-                                                </a>
+                                            <div class="acc-title" id="loginContainer">
+                                               <!-- content from JS -->
                                             </div>
                                             <div class="acc-title-lg">
                                                 <a href="login-account.html"><i class="feather-user"></i></a>
@@ -1317,19 +1311,18 @@
     </div>
     <!-- notification-bottom end -->
     <!-- mini-cart start -->
-    <div class="mini-cart">
+    <div id="minicart" class="mini-cart">
         <div class="cart-text">
             <!-- minicart-empty start -->
             <p class="d-none">No products in the cart.</p>
             <!-- minicart-empty end -->
             <!-- minicart-fill start -->
-            <p>
-                <span class="cart-count-desc">There are</span>
-                <span class="cart-count">8</span>
-                <span class="cart-count-desc">products</span>
+            <p id="count">
+               
             </p>
             <!-- minicart-fill end -->
             <!-- minicart-close start -->
+            
             <button class="cart-close"><i class="feather-x"></i></button>
             <!-- minicart-close end -->
         </div>
@@ -1340,320 +1333,25 @@
         </div>
         <!-- minicart empty-content end -->
         <ul class="cart-item">
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-1.jpg" class="img-fluid" alt="p-1">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Candy nut chocolate</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€11,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-2.jpg" class="img-fluid" alt="p-2">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">A bekery doughnuts</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€21,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-3.jpg" class="img-fluid" alt="p-3">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Fresh bread toast</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€24,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-4.jpg" class="img-fluid" alt="p-4">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Free sugar toast</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€25,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-5.jpg" class="img-fluid" alt="p-5">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Sandwich olka bread</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€31,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-6.jpg" class="img-fluid" alt="p-6">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Red sugar biscuit</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€61,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-7.jpg" class="img-fluid" alt="p-7">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Crackers for rasmalai</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€61,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
-            <li class="cart-product">
-                <div class="cart-img">
-                    <!-- minicart-img start -->
-                    <a href="product-template.html" class="img-area">
-                        <img src="img/product-list/p-8.jpg" class="img-fluid" alt="p-8">
-                    </a>
-                    <!-- minicart-img end -->
-                </div>
-                <div class="cart-content">
-                    <!-- minicart-title start -->
-                    <h6><a href="product-template2.html">Healthy cake pastry</a></h6>
-                    <!-- minicart-title end -->
-                    <div class="product-info">
-                        <!-- minicart-price start -->
-                        <div class="info-item">
-                            <span class="product-qty">1</span>
-                            <span>×</span>
-                            <span class="product-price">€44,00</span>
-                        </div>
-                        <!-- minicart-price end -->
-                    </div>
-                    <div class="product-quantity-action">
-                        <div class="product-quantity">
-                            <div class="cart-plus-minus">
-                                <button class="dec qtybutton minus"><i class="feather-minus"></i></button>
-                                <input type="text" name="quantity" value="1">
-                                <button class="inc qtybutton plus"><i class="feather-plus"></i></button>
-                            </div>
-                        </div>
-                        <!-- minicart delete-icon start -->
-                        <div class="delete-cart">
-                            <a href="javascript:void(0)" class="delete-icon"><i class="feather-trash-2"></i></a>
-                        </div>
-                        <!-- minicart delete-icon end -->
-                    </div>
-                </div>
-            </li>
+           
+         
         </ul>
         <!-- minicart-total start -->
         <ul class="subtotal-area">
             <li class="subtotal-info">
-                <div class="subtotal-titles">
+                <div id="subtotal" class="subtotal-titles">
                     <!-- minicart total-title start -->
                     <h6 class="cart-total">Subtotal:</h6>
                     <!-- minicart total-title end -->
                     <!-- minicart total-price start -->
-                    <span class="subtotal-price">€369,00</span>
+                   
                     <!-- minicart total-price end -->
                 </div>
             </li>
             <li class="mini-info">
                 <!-- minicart agree-text start -->
                 <label class="box-area">
-                    <span class="agree-text">I have read and agree with the <a href="terms-condition.html">terms &
-                            condition.</a></span>
+                    <span class="agree-text">I have read and agree with the <a href="terms-condition.html">terms & condition.</a></span>
                     <input type="checkbox" class="cust-checkbox">
                     <span class="cust-check"></span>
                 </label>
@@ -1661,12 +1359,11 @@
                 <!-- minicart button start -->
                 <div class="cart-btn">
                     <a href="cart-page.html" class="btn btn-style2">View cart</a>
-                    <a href="checkout-style1.html" class="btn btn-style2 checkout disabled">Checkout</a>
+                    <a onclick="checkoutCart()" href="checkout-style1.html" class="btn btn-style2 checkout disabled">Checkout</a>
                 </div>
                 <!-- minicart button end -->
             </li>
         </ul>
-        <!-- minicart-total end -->
     </div>
     <!-- minicart end -->
     <!-- search-popup start -->
@@ -1881,7 +1578,7 @@
                 CategoriesContainer.innerHTML +=
                     `<div class="grid-wrapper">
                                     <div class="cat-block">
-                                        <a href="collection.html" class="icon-block">
+                                        <a onclick="setCategory(${element.categoryId})" class="icon-block">
                                             <span class="cat-icon">
                                                 <img src="${element.categoryIcon}" class="img-fluid" alt="category-icon-01">
                                             </span>
@@ -1893,7 +1590,7 @@
                                             <h6 class="cat-title">${element.categoryName}</h6>
                                             <p>${element.categoryDescription}</p>
                                         </div>
-                                        <a href="collection.html" class="main-img">
+                                        <a onclick="setCategory(${element.categoryId})" class="main-img">
                                             <span class="cat-count">12</span>
                                             <span class="cat-img">
                                                 <img src="${element.categoryImage}" class="img-fluid" alt="category-01">
@@ -1904,7 +1601,7 @@
             
                 CategoriesList.innerHTML += `
                                 <li class="singlemenu-li">
-                                <a href="#" class="singlelink-title">
+                                <a onclick="setCategory(${element.categoryId})" class="singlelink-title">
                                 <span class="sp-link-title">${element.categoryName}</span>
                                 </a>
                                 </li>`
@@ -2057,8 +1754,238 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
+
+
+
+
+    
+
+
+    async function addToCart() {
+    
+    localStorage.productID = 10;
+    let n = localStorage.getItem("productID");
+    let cartID = localStorage.getItem("cartID") || Date.now();  // generate cartID if not present
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    console.log("befor cartItems", cartItems);
+   
+    let quantity = document.getElementById("quantity").value;
+    if(quantity==null ||quantity==""){
+        alert("Please INSERT THE QUANNTITY ");
+        return;
+    }
+    let cartItemId = localStorage.getItem("CartItemId") ? parseInt(localStorage.getItem("CartItemId")) : 1;
+    let response = await fetch(`https://localhost:44325/api/Products/${n}`);
+    let result = await response.json();
+    // console.log("result", result.price)
+   
+
+    let existingProductIndex = cartItems.findIndex(item => item.productID == n);
+    if (existingProductIndex !== -1) {
+           // Update quantity if the product is already in the cart
+         cartItems[existingProductIndex].quantity += parseInt(quantity);
+        }
+        else {
+
+    // Add new item to the cart with a unique CartItemId
+    let product = {
+        cartItemId: cartItemId,  // Set the auto-incremented CartItemId
+        cartID: cartID,
+        productID: n,
+        quantity: parseInt(quantity),
+        price: result.price,  // Example price, this should come from the actual product data
+        imageUrl: result.productImage,  // Example image URL, replace with actual data
+        name: result.productName  // Example product name, replace with actual data
+    };
+
+   
+
+    cartItems.push(product);
+
+    console.log("cartItems", cartItems);
+    // Increment the CartItemId for the next item
+    localStorage.setItem("CartItemId", cartItemId + 1);
+}
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+
+    window.alert("The item was added to the mini cart successfully.");
+    updateMiniCart();  // Update the mini cart display
+    event.preventDefault();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+}
+
+
+
+function updateMiniCart() {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    let cartContainer = document.querySelector('.cart-item');
+    cartContainer.innerHTML = '';  // Clear existing items
+
+
+  
+    let subtotalValue = 0;
+
+    let count=document.getElementById("count");
+    let itemCount = cartItems.length;
+count.innerHTML=` <span class="cart-count-desc">There are</span>
+                    <span class="cart-count">${itemCount}</span>
+                    <span class="cart-count-desc">products</span>`;
+    if (cartItems.length === 0) {
+        document.querySelector('.empty-cart').classList.remove('d-none');
+        document.querySelector('.cart-text').classList.add('d-none');
+    } else {
+        document.querySelector('.empty-cart').classList.add('d-none');
+        document.querySelector('.cart-text').classList.remove('d-none');
+        cartItems.forEach(item => {
+            cartContainer.innerHTML += `
+                <li class="cart-product">
+                    <div class="cart-img">
+                        <a href="product-template.html" class="img-area">
+                            <img src="${item.imageUrl}" class="img-fluid" alt="${item.name}">
+                        </a>
+                    </div>
+                    <div class="cart-content">
+                        <h6><a href="product-template.html">${item.name}</a></h6>
+                        <div class="product-info">
+                            <div class="info-item">
+                                <span class="product-qty">${item.quantity}</span>
+                                <span>×</span>
+                                <span class="product-price">$${item.price}  </span>
+                            </div>
+                        </div>
+                        <div class="product-quantity-action">
+                            <button class="delete-icon" onclick="removeCartItem(${item.cartItemId})">
+                                <i class="feather-trash-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            `;
+            
+            subtotalValue += item.price * item.quantity;
+        });
+        let subtotal = document.getElementById("subtotal");
+    subtotal.innerHTML = `<span class="subtotal-price">€${subtotalValue.toFixed(2)}</span>`;
+    }
+}
+
+// Call this function to load the cart on page load
+updateMiniCart();
+
+function removeCartItem(cartItemId) {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    let updatedCartItems = cartItems.filter(item => item.cartItemId != cartItemId);
+
+    localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+    updateMiniCart();  // Update the display after deletion
+
+    window.alert("Item removed from cart.");
+}
+
+
+async function checkoutCart() {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    if (cartItems.length === 0) {
+        window.alert("Your cart is empty!");
+        return;
+    }
+
+    const url = "https://localhost:44325/api/CartItem/addtocart";  // Your backend endpoint for saving cart items
+
+    for (let item of cartItems) {
+        let response = await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(item),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            window.alert("Failed to save some items. Please try again.");
+            return;
+        }
+    }
+
+    window.alert("Checkout completed successfully!");
+    localStorage.removeItem("cartItems");  // Clear the cart after checkout
+    location.reload();  // Reload the page or redirect to a success page
+}
+
+
+function setCategory(catID){
+    localStorage.selectedCategoryId= catID;
+    window.location.href="collection.html";
+}
+
+
+var loginContainer= document.getElementById("loginContainer");
+if(localStorage.UserID==null){
+    loginContainer.innerHTML=`
+                                                   <a href="login-account.html" class="acc-ti">
+                                                    <span class="user-icon"><i class="feather-user"></i></span>
+                                                    <div class="icon-heading">
+                                                        <h6 class="sub-heading">My account</h6>
+                                                        <span>Login &amp; Register</span>
+                                                    </div>
+                                                </a>`;
+}
+else {
+    loginContainer.innerHTML=`
+                                                 <a onclick="logout()" class="acc-ti">
+                            <span class="user-icon"><i class="feather-user"></i></span>
+                            <div class="icon-heading">
+                                <a onclick="logout()"><h6 class="sub-heading">Logout</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div>
+                        <a href="profile.html" class="acc-ti">
+                            <span class="user-icon"><i class="feather-user"></i></span>
+                            <div class="icon-heading">
+                                <a href="profile.html"><h6 class="sub-heading">Profile</h6> <br>
+                            </div>
+                        </a>`;
+} 
+
+function logout(){
+    localStorage.removeItem("UserID");
+    localStorage.removeItem("jwtToken");
+    localStorage.removeItem("UserType");
+    window.location.href="index-2.html";
+}
     </script>
     <!--End of Tawk.to Script-->
+
+
+
+    
 </body>
 
 <!-- Mirrored from spacingtech.com/html/banno/banno-ltr/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Sep 2024 18:47:24 GMT -->

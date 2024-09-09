@@ -29,9 +29,7 @@ namespace Project7Candy.Controllers
         public IActionResult GetProductById(int id)
         {
 
-
             var products = _db.Products.Where(c => c.CategoryId == id).ToList();
-
             return Ok(products);
         }
 
@@ -39,7 +37,7 @@ namespace Project7Candy.Controllers
         [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
-            var product = _db.Products.Find(id);
+            var product = _db.Products.FirstOrDefault(p=>p.ProductId==id);
 
             if (product == null)
             {

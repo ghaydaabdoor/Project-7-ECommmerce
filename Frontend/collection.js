@@ -43,7 +43,7 @@ function renderProduct(element, container) {
                         <img src="${element.productImage}" class="img-fluid img1" alt="p-1">
                     </div>
                     <div class="product-action" >
-                        <a href="productDetails.html" class="quick-view" onclick="saveProductId(${element.productId})" >
+                        <a href="product-details.html" class="quick-view" onclick="saveProductId(${element.productId})" >
                             <span class="tooltip-text">Product Details</span>
                             <span class="quickview-icon"><i class="feather-eye"></i></span>                            
                         </a>

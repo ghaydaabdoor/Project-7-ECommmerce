@@ -33,6 +33,8 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<Rating> Ratings { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     public virtual DbSet<UserAction> UserActions { get; set; }
@@ -41,6 +43,7 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<UserCheckIn> UserCheckIns { get; set; }
 
+    public virtual DbSet<UserCheckIn1> UserCheckIns1 { get; set; }
 
     public virtual DbSet<UserPoint> UserPoints { get; set; }
 
@@ -207,6 +210,25 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__Products__Catego__3D5E1FD2");
         });
 
+        modelBuilder.Entity<Rating>(entity =>
+        {
+            entity.HasKey(e => e.RatingId).HasName("PK__Ratings__FCCDF87CA60173E7");
+
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.Ratings)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Ratings_Products");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Ratings)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Ratings_Users");
+        });
+
         modelBuilder.Entity<User>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC1595ABD3");
@@ -270,7 +292,18 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__UserCheck__UserI__74AE54BC");
         });
 
-       
+        modelBuilder.Entity<UserCheckIn1>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__UserChec__3214EC07D814CC6F");
+
+            entity.ToTable("UserCheckIns");
+
+            entity.Property(e => e.LastCheckInDate).HasColumnType("datetime");
+
+            entity.HasOne(d => d.User).WithMany(p => p.UserCheckIn1s)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__UserCheck__UserI__6EF57B66");
+        });
 
         modelBuilder.Entity<UserPoint>(entity =>
         {

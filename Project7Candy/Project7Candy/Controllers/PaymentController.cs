@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Project7Candy.Controllers
@@ -15,6 +16,7 @@ namespace Project7Candy.Controllers
         }
 
         [HttpPost("create-order")]
+        [Authorize]
         public async Task<IActionResult> CreateOrder([FromBody] decimal amount)
         {
             var order = await _payPalService.CreateOrder(amount, "USD");
