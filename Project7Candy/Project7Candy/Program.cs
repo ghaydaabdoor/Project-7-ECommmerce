@@ -71,6 +71,18 @@ internal class Program
             options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
         });
 
+        // PayPal Service Injection
+        builder.Services.AddSingleton<PayPalService>(sp =>
+        {
+            // You can get these values from your appsettings.json or environment variables
+            var clientId = builder.Configuration["PayPal:ClientId"];
+            var clientSecret = builder.Configuration["PayPal:ClientSecret"];
+
+            // Ensure you toggle this flag for live/sandbox environments
+            var isLive = builder.Configuration.GetValue<bool>("PayPal:IsLive");
+
+            return new PayPalService(clientId, clientSecret, isLive);
+        });
 
         var app = builder.Build();
 

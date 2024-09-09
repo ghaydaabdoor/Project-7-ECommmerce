@@ -17,6 +17,8 @@ public partial class Order
 
     public DateOnly? OrderDate { get; set; }
 
+    public string? Comment { get; set; }
+
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
     public virtual User? User { get; set; }

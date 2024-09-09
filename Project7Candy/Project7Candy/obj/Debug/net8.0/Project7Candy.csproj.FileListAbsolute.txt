@@ -156,3 +156,5 @@ C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.pdb
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\Project7Candy.genruntimeconfig.cache
 C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\obj\Debug\net8.0\ref\Project7Candy.dll
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalCheckoutSdk.dll
+C:\Users\Orange\Desktop\Candy project\Project7Candy\Project7Candy\bin\Debug\net8.0\PayPalHttp-Dotnet.dll

@@ -940,10 +940,10 @@
                                             </div>
                                             <div id="grandtotal" class="total-amount">
                                                 <h6 class="total-title">Grand Total</h6>
-                                                <span class="amount total-price">€56.00</span>
+                                                <span id="GrandTotal" class="amount total-price">56.00</span>
                                             </div>
                                             <div class="proceed-to-checkout">
-                                                <a href="checkout-style1.html">Checkout</a>
+                                                <a onclick="sendGrandTotal()" href="checkout.html">Checkout</a>
                                             </div>
                                             <div class="cart-payment-icon">
                                                 <a href="javascript:void(0)" class="payment-icon">
@@ -2865,6 +2865,12 @@
                 return false;
             }
         }
+
+        let GrandTotal = document.getElementById("GrandTotal");
+        function sendGrandTotal(){
+            localStorage.TotalAmount= GrandTotal.textContent;
+        }
+
 
 
 

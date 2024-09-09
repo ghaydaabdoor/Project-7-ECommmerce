@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Project7Candy.Models;
 
 namespace Project7Candy.Controllers
@@ -12,6 +13,75 @@ namespace Project7Candy.Controllers
         public ProductsController(MyDbContext db)
         {
             _db = db;
+        }
+
+        // GET: api/Products
+        [HttpGet]
+        public IActionResult GetProducts()
+        {
+            var product = _db.Products.ToList();
+            return Ok(product);
+        }
+
+
+        [Route("category/{id}")]
+        [HttpGet]
+        public IActionResult GetProductById(int id)
+        {
+
+
+            var products = _db.Products.Where(c => c.CategoryId == id).ToList();
+
+            return Ok(products);
+        }
+
+        // GET: api/Products/5
+        [HttpGet("{id}")]
+        public IActionResult GetProduct(int id)
+        {
+            var product = _db.Products.Find(id);
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(product);
+        }
+
+
+
+        // GET: api/Products/priceRange?minPrice=0&maxPrice=6
+        [HttpGet("priceRange")]
+        public IActionResult GetProductsByPriceRange(decimal minPrice, decimal maxPrice)
+        {
+            var products = _db.Products
+                                  .Where(p => p.Price >= minPrice && p.Price <= maxPrice)
+                                  .ToList();
+
+            if (products.Count == 0)
+            {
+                return NotFound(new { message = "No products found within the specified price range." });
+            }
+
+            return Ok(products);
+        }
+
+        // GET: api/Products/search?query={query}
+        [Route("search")]
+        [HttpGet]
+        public IActionResult SearchProducts(string query)
+        {
+            var products = _db.Products
+                                   .Where(p => p.ProductName.Contains(query))
+                                   .ToList();
+
+            if (products.Count == 0)
+            {
+                return NotFound(new { message = "No products found matching the search criteria." });
+            }
+
+            return Ok(products);
         }
 
         [HttpGet("GetHighestRateProducts")]  
